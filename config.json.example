@@ -1,0 +1,11 @@
+{
+  "domain": "your-worker-domain.example.com",
+  "psw": "your-password",
+  "sport": 1080,
+  "sbind": "127.0.0.1",
+  "wkip": "",
+  "wkport": "",
+  "proxyip": "",
+  "proxyport": "",
+  "cfhs": ["example.com", ""]
+}

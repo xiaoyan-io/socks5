@@ -1,0 +1,38 @@
+{
+  "name": "cfpx",
+  "description": "A socks5 proxy server deployed on the Cloudflare Worker",
+  "bin": "cli.js",
+  "scripts": {
+    "deploy": "wrangler deploy",
+    "build": "wrangler deploy --dry-run",
+    "dev": "wrangler dev --remote",
+    "dev-local": "wrangler dev worker.js --remote",
+    "compile": "pkg . --targets node14-linux-x64,node14-macos-x64,node14-win-x64 --output bin/cfpx"
+  },
+  "author": "DNetL",
+  "keywords": [
+    "proxy",
+    "tunnel",
+    "socks5",
+    "serverless",
+    "Cloudflare",
+    "Worker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/DNetL/cfp-plus.git"
+  },
+  "bugs": {
+    "url": "https://github.com/DNetL/cfp-plus/issues"
+  },
+  "homepage": "https://github.com/DNetL/cfp-plus#readme",
+  "dependencies": {
+    "ws": "^8.2.3"
+  },
+  "devDependencies": {
+    "pkg": "^5.8.1",
+    "wrangler": "^3.78.7"
+  },
+  "version": "2.1.0",
+  "license": "MIT"
+}

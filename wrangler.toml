@@ -1,0 +1,7 @@
+name = "cf-worker-socks5"
+main = "worker.js"
+compatibility_date = "2023-05-26"
+workers_dev = true
+
+[vars]
+PASSWD = "123456"
